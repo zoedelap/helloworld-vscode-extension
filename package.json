@@ -14,15 +14,6 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
-    "views": {
-      "explorer": [
-        {
-          "type": "webview",
-          "id": "helloView",
-          "name": "Hello View"
-        }
-      ]
-    },
     "commands": [
       {
         "command": "helloworld.start",
