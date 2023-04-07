@@ -9,21 +9,25 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onView:helloworld.helloView"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "views": {
       "explorer": [
         {
-          "id": "helloTreeView",
+          "type": "webview",
+          "id": "helloView",
           "name": "Hello View"
         }
       ]
     },
     "commands": [
       {
-        "command": "helloworld.helloWorld",
-        "title": "Hello World"
+        "command": "helloworld.start",
+        "title": "Open webview hello world in explorer",
+        "category": "Hello World"
       }
     ]
   },
