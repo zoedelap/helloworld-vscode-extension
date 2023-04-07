@@ -14,13 +14,15 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "helloworld.start",
-        "title": "Open webview hello world in explorer",
-        "category": "Hello World"
-      }
-    ]
+    "views": {
+      "explorer": [
+          {
+              "type": "webview",
+              "id": "helloworld.start",
+              "name": "Hello World"
+          }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
