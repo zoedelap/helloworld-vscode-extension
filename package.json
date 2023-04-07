@@ -12,6 +12,14 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "helloTreeView",
+          "name": "Hello View"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "helloworld.helloWorld",
