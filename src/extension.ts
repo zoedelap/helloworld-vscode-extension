@@ -16,7 +16,8 @@ export function activate(context: vscode.ExtensionContext) {
 	let disposable = vscode.commands.registerCommand('helloworld.helloWorld', () => {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from helloworld!');
+		// vscode.window.showInformationMessage('Hello VS Code!');
+		vscode.window.setStatusBarMessage('Hello VS Code!', 3000);
 	});
 
 	context.subscriptions.push(disposable);
